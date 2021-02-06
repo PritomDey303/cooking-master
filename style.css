@@ -1,0 +1,28 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(247, 227, 115);
+}
+section{
+    padding: 10px 0;
+}
+.container{
+    width: 80%;
+}
+.logo{
+    font-weight: bold;
+}
+
+.border{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.list-group-item{
+    border: 0px;
+}
