@@ -24,6 +24,8 @@ searchBtn.addEventListener("click", () => {
 const findMeals = (searchValue) => {
 	const mealList = document.getElementById("meal-list");
 	mealList.innerHTML = "";
+    document.getElementById("alert").style.display="none";
+    document.getElementById("single-food-section").style.display="none";
 	//Calling api by first letter of food name
 
 	fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`).then((response) => {
