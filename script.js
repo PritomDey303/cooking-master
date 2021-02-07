@@ -27,7 +27,7 @@ const findMeals = (searchValue) => {
     mealList.innerHTML="";
    //Calling api by first letter of food name
 
-   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?f=${searchValue}`).then((response) => {
+   fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchValue}`).then((response) => {
     return response.json();
     }).then((mealData) => {    
      const meals=mealData.meals;
@@ -113,3 +113,9 @@ const singleDisplayItem = (name) => {
     })
 }
 
+///////////////////////////////////
+//closeDisplay function
+///////////////////////////////////
+const closeDisplay = (event) => {
+    event.target.parentNode.parentNode.style.display="none";
+}
