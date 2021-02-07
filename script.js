@@ -11,7 +11,7 @@ searchBtn.addEventListener("click",() => {
         findMeals(searchVal);
     }
     else{
-        let msg="Please Enter a country name.";
+        let msg="Please Enter meal name.";
         displayAlert(msg,"red");
     }
     
