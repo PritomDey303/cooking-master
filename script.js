@@ -11,7 +11,7 @@ searchBtn.addEventListener("click",() => {
         findMeals(searchVal);
     }
     else{
-        let msg="Please Enter meal name.";
+        let msg="Please enter a meal name.";
         displayAlert(msg,"red");
     }
     
@@ -42,7 +42,7 @@ const findMeals = (searchValue) => {
             col.setAttribute("class","col-3");
             col.setAttribute("onclick","singleDisplay(event)");
             let listItem=`
-               <div class="card  border cards">
+               <div class="card border cards shadow" style="curson:pointer">
                   <img src="${item.strMealThumb}" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h6 class="card-title text-center">${item.strMeal}</h6>
@@ -117,5 +117,5 @@ const singleDisplayItem = (name) => {
 //closeDisplay function
 ///////////////////////////////////
 const closeDisplay = (event) => {
-    event.target.parentNode.parentNode.style.display="none";
+    document.getElementById("single-food-section").style.display="none";
 }
