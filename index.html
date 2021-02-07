@@ -13,8 +13,8 @@
   </head>
   <body>
     <!-- START NAVIGATION SECTION -->
-    <section class="nav-section">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <section class="nav-section clearfix">
+      <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container">
          <a class="navbar-brand logo" href="#">Cooking Master</a>
             <ul class="navbar-nav">
@@ -37,45 +37,46 @@
     <!-- END NAVIGATION SECTION -->
 
     <!-- START SEARCH-BOX SECTION -->
-    <section id="searchbox-section">
+    <section id="searchbox-section clearfix">
         <div class="container">
             <div class="input-group w-50 mx-auto">
                 <input type="text" id="search-value" class="form-control form-control-lg" placeholder="Search for meal..." aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button class="btn btn-success" type="button" id="search-btn">Search</button>
               </div>
+
+              <div class="alert mx-auto" id="alert">
+                <span></span>
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+              </div>
         </div>
     </section>
     <!-- END SEARCHBOX SECTION -->
-
+    
+     <!-- START SINGLE FOOD ITEM SECTION -->
+     <section class="signle-food-section clearfix ">
+       <div class="container">
+        <div class="card w-50 mx-auto border">
+          <img src="" class="card-img-top" alt="" id="single-item-img">
+          <div class="card-body">
+            <h2 class="card-title text-center" id="single-item-title">Card title</h2>
+          </div>
+          <h5 class=" px-3 py-2">Ingredients</h5>
+          <ul class="list-group list-group-flush" id="list-group"></ul>
+        </div>
+      </div>
+</section>
+<!-- END SINGLE FOOD ITEM SECTION -->
     <!-- START FOOD ITEMS SECTION -->
-    <section class="food-items-section">
+    <section class="food-items-section clearfix">
         <div class="container">
-            <div class="row g-3" id="meal-list">
-             
-
-            </div>
+            <div class="row g-3" id="meal-list"></div>
           </div>
     </section>
     <!-- END FOOD ITEMS SECTION -->
 
-    <!-- START SINGLE FOOD ITEM SECTION -->
-    <section class="signle-food-section">
-        <div class="container">
-            <div class="card w-50 mx-auto border">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h2 class="card-title text-center">Card title</h2>
-                </div>
-                <h5 class=" px-3 py-2">Ingredients</h5>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Cras justo odio</li>
-                  <li class="list-group-item">Dapibus ac facilisis in</li>
-                  <li class="list-group-item">Vestibulum at eros</li>
-                </ul>
-              </div>
-        </div>
-    </section>
-    <!-- END SINGLE FOOD ITEM SECTION -->
+
+
+   
 
     <!--  Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
