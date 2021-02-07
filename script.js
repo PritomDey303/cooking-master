@@ -87,6 +87,7 @@ const singleDisplayItem = (name) => {
         const item=nameApi.meals[0];
         console.log(item);
         let i=1;
+        document.getElementById("single-food-section").style.display="block";
         const listGroup=document.getElementById("list-group");
         listGroup.innerHTML="";
         const singleItemImg=document.getElementById("single-item-img");
@@ -102,7 +103,7 @@ const singleDisplayItem = (name) => {
                 //let listItem=`<li class="list-group-item">${item[ingredient]}</li>`;
                 let listItem=document.createElement("li");
                 listItem.setAttribute("class","list-group-item");
-                listItem.innerText=item[ingredient];
+                listItem.innerHTML =`<i class="fa fa-check-square text-success"></i> ${item[ingredient]}`;
                 listGroup.appendChild(listItem);
                 i++;
             }
