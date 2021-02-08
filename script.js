@@ -115,6 +115,6 @@ const singleDisplayItem = (name) => {
 ///////////////////////////////////
 //closeDisplay function
 ///////////////////////////////////
-const closeDisplay = (event) => {
+const closeDisplay = () => {
 	document.getElementById("single-food-section").style.display = "none";
 }
